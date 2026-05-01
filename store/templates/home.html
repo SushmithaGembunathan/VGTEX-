@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Elegant Traditional Collections</h1>
+        <p>Premium Sarees • Dry Fruits • Health Mixes</p>
+        <button>Shop Now</button>
+    </div>
+
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+
+    <div class="card">
+        <h2>Sarees</h2>
+    </div>
+
+    <div class="card">
+        <h2>Dry Fruits</h2>
+    </div>
+
+    <div class="card">
+        <h2>Health Mixes</h2>
+    </div>
+
+</section>
+
+<!-- Product Grid Section -->
+<section class="products">
+
+    <h2>Latest Arrivals</h2>
+
+    <div class="product-grid">
+
+        {% for product in products %}
+
+        <div class="product-card">
+
+            <img src="{{ product.image.url }}">
+
+            <h3>{{ product.title }}</h3>
+
+            <p>₹ {{ product.price }}</p>
+
+            <button>Order on WhatsApp</button>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

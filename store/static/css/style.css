@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f8f5f1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B0F0F;
+}
+
+.hero {
+    height: 90vh;
+    background-image: url('/static/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.hero-content {
+    color: rgb(12, 12, 12);
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content button {
+    background: #4B0F0F;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background-image: url('/static/images/mandala.jpg');
+    width: 300px;
+    height: 300px;
+    opacity: 0.08;
+    right: 0;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}

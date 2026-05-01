@@ -1,9 +1,26 @@
 <footer class="footer">
 
-    <h2>VGTEX</h2>
+    <div class="footer-columns">
 
-    <p>Premium Sarees • Dry Fruits • Health Mixes</p>
+        <div>
+            <h2>VGTEX</h2>
+            <p>Premium Sarees • Dry Fruits • Health Mixes</p>
+        </div>
 
-    <p>WhatsApp: +91 9444285597 || +91 9445076373</p>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="{% url 'sarees' %}">Sarees</a><br>
+            <a href="{% url 'dryfruits' %}">Dry Fruits</a><br>
+            <a href="{% url 'healthmixes' %}">Health Mixes</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>+91 9444285597 || 9445076373</p>
+            <p>vgtex@gmail.com</p>
+        </div>
+
+    </div>
 
 </footer>

@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #f8f5f1;
 }
 
 .navbar {
@@ -20,16 +19,24 @@ body {
 
 .hero {
     height: 90vh;
-    background-image: url('/static/images/banner.jpg');
+    width: 100%;
+    background-image: url("../images/bg.jpeg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 100px;
+    text-align: center;
+
+    position: relative;
 }
 
 .hero-content {
-    color: rgb(12, 12, 12);
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
 .hero-content h1 {
@@ -46,6 +53,7 @@ body {
 .hero::before {
     content: "";
     position: absolute;
+    inset: 0;
     width: 350px;
     height: 350px;
     background-image: url('/static/images/bg.jpeg');
@@ -111,4 +119,63 @@ body {
     .product-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.page-banner {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+}
+
+.saree-banner {
+    background-image: url("../images/saree-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.dryfruit-banner {
+    background-image: url("../images/dryfruit-bg.jpg");
+    background-color: red;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.health-banner {
+    background-image: url("../images/health-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-banner {
+    background-image: url("../images/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.reviews {
+    padding: 80px;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
